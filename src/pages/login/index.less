@@ -1,8 +1,35 @@
+@import '../../style/default.less';
+
+
+
+
 .LogoBox{
-    width: calc(100vh);
-    height: 10vw;
+    text-align: center;
+    padding: 20vw 0vw;
+    width: 100%;
     .LogoImg{
-        width: 30vw;
-        height: 30vw;;
+       width: 65%
+    }
+}
+.loginWrap{
+    margin: 0 auto;
+    width: 90%;
+    font-size: 5vw;
+    .userWrap{
+        input{
+            margin-left: 5vw;
+            border: 0;
+            &:focus{
+                outline: none;
+                background: @colorM;
+            }
+        }
+    }
+
+
+    .loginSwitcher{
+        margin-top: 10vw;
+        text-align: center;
+        color: @colorv;
     }
 }

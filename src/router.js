@@ -7,13 +7,13 @@ export default class Irouter extends React.Component {
         return (
             <div>
                 <HashRouter>
-                        <Route path='/' component={Login} />
-                        <Route path='/admin' render={() =>
-                                <Switch>
-                                </Switch>    
-                         
-                        } />
-        
+                    <Route path='/' component={Login} />
+                    <Route path='/admin' render={() =>
+                        <Switch>
+                        </Switch>
+
+                    } />
+
                 </HashRouter>
             </div>
         )
