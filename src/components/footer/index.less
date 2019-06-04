@@ -1,0 +1,28 @@
+@import '../../style/default.less';
+.footerBox {
+    display: flex;
+    justify-content: space-around;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 99;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    border-top: 1px solid #f2f2f2;
+    box-shadow: 0 -2px 3px -1px #f3f3f3;
+    padding-top: 1vw;
+    .subBox {
+        .activeColor{
+           color:@colorw;
+        }
+        img{
+            width: 7vw;
+        }
+        .deActiveColor{
+           color: @colorx; 
+        }
+
+    }
+}

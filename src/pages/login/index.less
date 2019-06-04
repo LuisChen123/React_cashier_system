@@ -1,33 +1,51 @@
 @import '../../style/default.less';
 
-
-
-
-.LogoBox{
+.LogoBox {
     text-align: center;
     padding: 20vw 0vw;
     width: 100%;
-    .LogoImg{
-       width: 65%
+
+    .LogoImg {
+        width: 65%
     }
 }
-.loginWrap{
+
+.loginWrap {
     margin: 0 auto;
     width: 90%;
     font-size: 5vw;
-    .userWrap{
-        input{
+
+    .userWrap {
+        height: 10vw;
+        border-bottom: 1px solid @colorO;
+        margin-bottom: 6vw;
+        input {
+            height: 100%;
+            
             margin-left: 5vw;
             border: 0;
-            &:focus{
+            &:focus {
                 outline: none;
                 background: @colorM;
             }
         }
+        .textCodeInput {
+            width: 51%;
+            display: inline;
+            vertical-align: middle;
+        }
+
+        .reciveTextCode {
+            display: inline;
+            vertical-align: middle;
+            font-size: 3vw;
+            border: 1px solid @colorO;
+            padding: 1vw;
+            margin-bottom: 1vw;
+        }
     }
 
-
-    .loginSwitcher{
+    .loginSwitcher {
         margin-top: 10vw;
         text-align: center;
         color: @colorv;
