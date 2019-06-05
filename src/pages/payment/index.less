@@ -1,0 +1,76 @@
+@import '../../style/default.less';
+.pageWrap {
+    padding: 4vw;
+    margin-bottom: 16vw;
+    font-size: 4vw;
+    color: @colorz;
+    .line {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid @colory;
+        padding: 5vw 0 5vw 0;
+        .leftBox {
+            .redMark {}
+        }
+        .leftPicBox{
+            margin: auto 0;
+        }
+        .RightBox {}
+
+        .aLabel {
+            
+        }
+        .radioGroup{
+            margin-left: 10vw;
+            .radioInput{
+                &:focus{
+                    outline: none !important;
+                    border-bottom: 1px solid @colory !important;
+                    box-shadow:unset !important;
+                }
+            }
+        }
+        .line-input {
+            border: 0;
+            outline: none !important;
+            text-align: right;
+        }
+    }
+    .radio-line{
+        justify-content: left;
+    }
+    .submitIt {
+        display: block;
+        margin: 0 auto;
+        margin-top: 5vw;
+    }
+    .avatar-uploader > .ant-upload {
+        width: 128px;
+        height: 128px;
+      }
+}
+.inputAmount {
+    width: 79% !important;
+    color: @colorz;
+    .line {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 7vw;
+        .leftBox {
+            width: 30%;
+            margin: auto 0;
+        }
+        .rightBox {
+            width: 70%;
+            text-align: right;
+            .line-input {
+                border: 0;
+                border-bottom: 1px solid @colory;
+                text-align: center;
+                &:focus{
+                    outline: unset;
+                }
+            }
+        }
+    }
+}
