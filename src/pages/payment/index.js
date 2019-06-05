@@ -4,7 +4,6 @@ import { Modal, Button, Select, Upload, Icon, message, Radio, Input } from 'antd
 import { connect } from 'react-redux';
 import { actionCreators } from './store';
 import axios from 'axios'
-import Footer from '../../components/footer'
 
 class Payment extends PureComponent {
     state = {
@@ -140,7 +139,7 @@ class Payment extends PureComponent {
                         <input className="line-input" maxLength={20} placeholder="E-tao Account"></input>
                     </div>
                     <div className="line">
-                        <label className="aLabel">click to add more imformation.</label>
+                        <label className="aLabel centerLabel">click to add more imformation.</label>
                     </div>
                     <Button className="submitIt" type="primary">Submit Your Payment</Button>
                 </div>
@@ -177,12 +176,9 @@ const mapState = (state) => {
 
     }
 }
-
 const mapDispatch = (dispatch) => {
     return {
 
     }
 }
-
-
 export default connect(mapState, mapDispatch)(Payment)
