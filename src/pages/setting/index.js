@@ -1,21 +1,40 @@
 import React, { Fragment, PureComponent } from 'react';
 import './index.less';
+import { Button } from 'antd';
 import { connect } from 'react-redux';
-import { actionCreators } from './store';
-import axios from 'axios'
-import Footer from '../../components/footer'
+
 
 class Setting extends PureComponent {
     state = {
-
+        userName:'asdsdd',
+        accountNumber:'213213543245234',
+        name : 'info'
     }
-    render() {
-        
-        
+    handleLogOut=()=>{
+        Storage.set=()=>{
+            localStorage.setItem(this.state.name,JSON.stringify(false))
+        }
+           
+        this.props.history.replace('/');
+    }
+    
+    render() {  
         return (
             <Fragment>
-                this is setting page
-                {/* <Footer/> */}
+              <div className="settingWrap">
+                    <div className="line">
+                        <label className="leftBox">User Name:</label>
+                        <label className="rightBox">{this.state.userName}</label>
+                    </div>
+                    <div className="line">
+                        <label className="leftBox">Account Number:</label>
+                        <label className="rightBox">{this.state.accountNumber}</label>
+                    </div>
+                    <div className="buttonWrap">
+                    <Button className="logOutButton" type="primary" onClick={this.handleLogOut}>Log Out</Button>
+                    </div>
+                   
+              </div>
             </Fragment>
         )
     }

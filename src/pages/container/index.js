@@ -1,8 +1,6 @@
 import React, { Fragment, PureComponent } from 'react';
 import './index.less';
 import { connect } from 'react-redux';
-import { actionCreators } from './store';
-import axios from 'axios'
 import Footer from '../../components/footer'
 
 class Container extends PureComponent {

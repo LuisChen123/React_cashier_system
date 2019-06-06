@@ -2,9 +2,6 @@ import React, { Fragment, PureComponent } from 'react';
 import './index.less';
 import { Modal, Button, Select, Upload, Icon, message, Radio, Input } from 'antd';
 import { connect } from 'react-redux';
-import { actionCreators } from './store';
-import axios from 'axios'
-
 class Payment extends PureComponent {
     state = {
         loading: false,

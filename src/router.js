@@ -19,12 +19,12 @@ export default class Irouter extends React.Component {
                     <Route path='/' exact  component={Login} />
                     <Container path='/payment'  component={Container}>
                    
-                           {/* <Auth path='/payment' exact component={Payment} />
+                           <Auth path='/payment' exact component={Payment} />
                            <Auth path='/payment/Record'   component={Record} />
-                           <Auth path='/payment/setting'   component={Setting} /> */}
-                           <Route path='/payment' exact component={Payment} />
+                           <Auth path='/payment/setting'   component={Setting} />
+                           {/* <Route path='/payment' exact component={Payment} />
                            <Route path='/payment/Record'   component={Record} />
-                           <Route path='/payment/setting'   component={Setting} />
+                           <Route path='/payment/setting'   component={Setting} /> */}
                                     
                     </Container>
                     </Switch>

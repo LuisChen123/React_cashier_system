@@ -1,11 +1,9 @@
-import React, { Fragment, PureComponent, Component } from 'react';
+import React, { Fragment, PureComponent } from 'react';
 import './index.less';
 import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
-import { actionCreators } from './store';
-import axios from 'axios'
 
-class Footer extends Component {
+class Footer extends PureComponent {
     render() {
         // console.log(this.props.location.pathname)
         var pathname = this.props.location.pathname

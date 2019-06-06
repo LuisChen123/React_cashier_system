@@ -1,22 +1,40 @@
-.recordWrap{
-    .item{
-        .itemTitle{
-            .date{
+@import '../../style/default.less';
+.recordWrap {
+    margin-bottom: 16vw;
+    .item {
+        border-bottom: 3vw solid #f2f2f2;
+        padding: 2vw 4vw 0 4vw;
+        .itemTitle {
+            font-size: 4vw;
+            display: flex;
+            justify-content: space-between;
+            .date {
 
             }
-            .check-type{
+            .check-type {
 
             }
         }
-        .itemBody{
-            .line{
-                .leftBox{
+        .itemBody {
+            .line {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 2vw;
+                .leftBox {
 
                 }
-                .rightBox{
-                    
+                .rightBox {
+                    .redSign{
+                        color:@colorw;
+                    }
+                }
+                .commentBox{
+                    width: 40%;
+                    word-break: break-all;
                 }
             }
-        } 
+        }
+    }.noData{
+        padding: 4vw;
     }
 }

@@ -9,10 +9,6 @@ class Record extends PureComponent {
     }
     componentDidMount(){
         this.props.callRecord()
-        console.log(this.props.form)
-    }
-    check =()=>{
-        console.log(this.props.form)
     }
     render() {
         return (
@@ -22,23 +18,34 @@ class Record extends PureComponent {
                    this.props.form ?
                    this.props.form.map(item=>{
                        return(
-                        <div className="item">
+                        <div className="item" key={item.id}>
                             <div className="itemTitle">
-                                <p className="date">2019年06月05日</p>
-                                <p className="check-type">自定义查询</p>
+                                <p className="date">{item.date}</p>
+                                <p className="check-type">{item.check_type}</p>
                             </div>
                             <div className="itemBody">
                                 <div className="line">
-                                    <div className="leftBox"></div>
-                                    <div className="rightBox"></div>
+                                    <div className="leftBox">Card Type</div>
+                                    <div className="rightBox">{item.card_type}</div>
+                                </div>
+                                <div className="line">
+                                    <div className="leftBox">Amount</div>
+                                    <div className="rightBox"><span className="redSign">$</span>{item.amount}</div>
+                                </div>
+                                <div className="line">
+                                    <div className="leftBox">Payment Type</div>
+                                    <div className="rightBox">{item.payment_type}</div>
+                                </div>
+                                <div className="line">
+                                    <div className="leftBox">Comment</div>
+                                    <div className="rightBox commentBox">{item.comment}</div>
                                 </div>
                             </div>
                         </div> 
-                       )
-                  
+                       )  
                    })
                    :
-                  <div>sorry,there is no data avliable, please connect with our customer service. </div>
+                  <div className="noData">sorry,there is no data avliable, please connect with our customer service. </div>
                }
                </div>
             </Fragment>
