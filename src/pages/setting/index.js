@@ -11,10 +11,7 @@ class Setting extends PureComponent {
         name : 'info'
     }
     handleLogOut=()=>{
-        Storage.set=()=>{
-            localStorage.setItem(this.state.name,JSON.stringify(false))
-        }
-           
+        sessionStorage.clear();
         this.props.history.replace('/');
     }
     

@@ -4,7 +4,7 @@ import { withRouter } from 'react-router'
 
 class Auth extends PureComponent {
     render(){
-        var info=localStorage.getItem('info');
+        var info=sessionStorage.getItem('info');
         if(!info){
             return (<Redirect to="/"/>)
         }

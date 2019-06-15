@@ -48,6 +48,7 @@ class Login extends PureComponent {
                 axios.get('/api/userInfo.json').then(res=>{
                     if(res.data.success === true){
                         message.success('login success');
+                        sessionStorage.setItem('info',true)
                         this.props.history.replace('/payment');
                     }else{
                         message.error('Username or Password is wrong');
@@ -61,6 +62,7 @@ class Login extends PureComponent {
                 axios.get('/api/userInfo.json').then(res=>{
                     if(res.data.success === true){
                         message.success('login success');
+                        sessionStorage.setItem('info',true)
                         this.props.history.replace('/payment');
 
                     }else{
